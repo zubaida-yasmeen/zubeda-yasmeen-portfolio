@@ -7,6 +7,12 @@
       "imageHint": "cloud computing"
     },
     {
+      "id": "project-cybernode",
+      "description": "CyberNode ML-Adaptive Honeypot Dashboard",
+      "imageUrl": "https://picsum.photos/seed/cybernode/800/600",
+      "imageHint": "security dashboard"
+    },
+    {
       "id": "project-ai",
       "description": "Artificial Intelligence visualization",
       "imageUrl": "https://picsum.photos/seed/ai456/800/600",

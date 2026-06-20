@@ -16,6 +16,14 @@ const projects = [
     tags: ["AWS", "Next.js", "React", "Tailwind CSS"],
     github: "https://github.com/zubaida-yasmeen/aws-cloud-club-mrit",
     demo: "https://aws-cloud-club-mrit.vercel.app/"
+  },
+  {
+    title: "CyberNode: ML-Adaptive Honeypot",
+    description: "A real-time explainable ML analysis platform for adaptive network response. Features an intelligent Threat Intelligence Hub with live traffic clustering, risk assessment, and autonomous response selection.",
+    image: PlaceHolderImages.find(img => img.id === "project-cybernode")?.imageUrl,
+    tags: ["Machine Learning", "Cybersecurity", "React", "Python"],
+    github: "https://github.com/zubaida-yasmeen/Cyber-Adaptive-Honeypot-ML-Based-",
+    demo: "https://cyber-adaptive-honeypot-ml-based.vercel.app/"
   }
 ]
 
@@ -30,7 +38,7 @@ export function Projects() {
           <h3 className="text-4xl font-bold tracking-tight">Featured Projects</h3>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <Card key={index} className="group overflow-hidden border-border bg-card hover:border-primary/50 transition-all duration-300">
               <div className="relative aspect-video overflow-hidden bg-muted">
@@ -40,7 +48,7 @@ export function Projects() {
                     alt={project.title}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
-                    data-ai-hint="cloud computing"
+                    data-ai-hint="dashboard design"
                   />
                 ) : (
                   <div className="w-full h-full flex items-center justify-center">
