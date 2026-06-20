@@ -1,3 +1,4 @@
+
 "use client"
 
 import Image from "next/image"
@@ -9,28 +10,12 @@ import { PlaceHolderImages } from "@/lib/placeholder-images"
 
 const projects = [
   {
-    title: "Serverless Intelligent Analytics",
-    description: "A real-time data processing pipeline built on AWS Lambda, S3, and Kinesis, utilizing Gemini for natural language queries.",
+    title: "AWS Cloud Club Site",
+    description: "Official community website for the AWS Cloud Club at MRIT. A hub for student developers to access cloud resources, event schedules, and join a thriving tech community.",
     image: PlaceHolderImages.find(img => img.id === "project-cloud")?.imageUrl,
-    tags: ["AWS", "Python", "GenAI", "Terraform"],
-    github: "#",
-    demo: "#"
-  },
-  {
-    title: "AI Infrastructure Auto-scaler",
-    description: "Kubernetes controller designed to scale GPU instances based on inference load metrics and custom Prometheus exporters.",
-    image: PlaceHolderImages.find(img => img.id === "project-ai")?.imageUrl,
-    tags: ["Go", "Kubernetes", "Docker", "Prometheus"],
-    github: "#",
-    demo: "#"
-  },
-  {
-    title: "Secure Cloud-Native Auth",
-    description: "Zero-trust architecture implementation using AWS Cognito, IAM Roles, and WAF to protect distributed microservices.",
-    image: PlaceHolderImages.find(img => img.id === "project-devops")?.imageUrl,
-    tags: ["AWS Cognito", "Node.js", "Security", "IAM"],
-    github: "#",
-    demo: "#"
+    tags: ["AWS", "Next.js", "React", "Tailwind CSS"],
+    github: "https://github.com/zubaida-yasmeen/aws-cloud-club-mrit",
+    demo: "https://aws-cloud-club-mrit.vercel.app/"
   }
 ]
 
@@ -55,7 +40,7 @@ export function Projects() {
                     alt={project.title}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
-                    data-ai-hint="project screenshot"
+                    data-ai-hint="cloud computing"
                   />
                 ) : (
                   <div className="w-full h-full flex items-center justify-center">
@@ -63,10 +48,10 @@ export function Projects() {
                   </div>
                 )}
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-                   <Link href={project.github} className="p-3 bg-background rounded-full hover:text-primary transition-colors">
+                   <Link href={project.github} target="_blank" rel="noopener noreferrer" className="p-3 bg-background rounded-full hover:text-primary transition-colors">
                     <Github className="h-5 w-5" />
                   </Link>
-                  <Link href={project.demo} className="p-3 bg-background rounded-full hover:text-primary transition-colors">
+                  <Link href={project.demo} target="_blank" rel="noopener noreferrer" className="p-3 bg-background rounded-full hover:text-primary transition-colors">
                     <ExternalLink className="h-5 w-5" />
                   </Link>
                 </div>
