@@ -1,4 +1,3 @@
-
 "use client"
 
 import Link from "next/link"
@@ -15,10 +14,11 @@ export function Footer() {
       <div className="container px-6 mx-auto">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <div className="space-y-4">
-             <h2 className="text-3xl md:text-5xl font-bold tracking-tight">Let's build the future together.</h2>
+             <h2 className="text-3xl md:text-5xl font-bold tracking-tight">
+               Open to internships, cloud roles, AI collaborations, and software engineering opportunities.
+             </h2>
              <p className="text-muted-foreground max-w-xl mx-auto">
-               Currently looking for new opportunities in Cloud Engineering and AI Research. 
-               My inbox is always open whether you have a question or just want to say hi!
+               My inbox is always open whether you have a question, a project idea, or just want to say hi!
              </p>
           </div>
 
