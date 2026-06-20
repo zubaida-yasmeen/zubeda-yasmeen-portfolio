@@ -30,19 +30,19 @@ export function Hero() {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-            <Button size="lg" className="h-12 px-8 rounded-full font-bold group" asChild>
+            <Button size="lg" className="h-12 px-8 rounded-full font-bold group bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
               <Link href="#projects">
                 View My Projects
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
             </Button>
             <div className="flex items-center gap-2">
-              <Button variant="outline" size="icon" className="h-12 w-12 rounded-full" asChild>
-                <Link href="https://github.com/zubaida-yasmeen" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" size="icon" className="h-12 w-12 rounded-full border-border hover:border-primary/50 hover:text-primary transition-all" asChild>
+                <Link href="https://github.com/zubaida-yasmeen/" target="_blank" rel="noopener noreferrer">
                   <Github className="h-5 w-5" />
                 </Link>
               </Button>
-              <Button variant="outline" size="icon" className="h-12 w-12 rounded-full" asChild>
+              <Button variant="outline" size="icon" className="h-12 w-12 rounded-full border-border hover:border-primary/50 hover:text-primary transition-all" asChild>
                 <Link href="https://www.linkedin.com/in/zubeda-yasmeen/" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="h-5 w-5" />
                 </Link>

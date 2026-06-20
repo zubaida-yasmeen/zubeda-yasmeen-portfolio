@@ -23,7 +23,7 @@ export function Footer() {
           </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-4">
-            <Button size="lg" className="rounded-full h-14 px-8 font-bold" asChild>
+            <Button size="lg" className="rounded-full h-14 px-8 font-bold bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-300 shadow-lg shadow-primary/20" asChild>
               <Link href="mailto:zubeda@example.com">
                 <Mail className="mr-2 h-5 w-5" />
                 Get In Touch
@@ -31,10 +31,10 @@ export function Footer() {
             </Button>
             <div className="flex items-center gap-4">
               <Link 
-                href="https://github.com/zubaida-yasmeen" 
+                href="https://github.com/zubaida-yasmeen/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="p-3 text-muted-foreground hover:text-primary transition-colors"
+                className="p-3 text-muted-foreground hover:text-primary transition-all duration-300"
               >
                 <Github className="h-6 w-6" />
               </Link>
@@ -42,7 +42,7 @@ export function Footer() {
                 href="https://www.linkedin.com/in/zubeda-yasmeen/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="p-3 text-muted-foreground hover:text-primary transition-colors"
+                className="p-3 text-muted-foreground hover:text-primary transition-all duration-300"
               >
                 <Linkedin className="h-6 w-6" />
               </Link>
@@ -50,7 +50,7 @@ export function Footer() {
           </div>
 
           <div className="pt-20 flex flex-col items-center gap-8">
-             <Button variant="ghost" size="icon" onClick={scrollToTop} className="rounded-full h-12 w-12 border border-border">
+             <Button variant="ghost" size="icon" onClick={scrollToTop} className="rounded-full h-12 w-12 border border-border hover:bg-muted transition-colors">
                 <ChevronUp className="h-6 w-6" />
              </Button>
              <div className="text-center text-sm text-muted-foreground font-code">
