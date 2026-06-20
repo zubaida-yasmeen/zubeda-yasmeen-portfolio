@@ -12,8 +12,8 @@ interface TypingEffectProps {
 
 export function TypingEffect({
   phrases,
-  typingSpeed = 100,
-  deletingSpeed = 50,
+  typingSpeed = 80,
+  deletingSpeed = 40,
   delayBetween = 2000,
 }: TypingEffectProps) {
   const [currentText, setCurrentText] = React.useState("")
@@ -47,8 +47,8 @@ export function TypingEffect({
   }, [currentText, isDeleting, currentPhraseIndex, phrases, typingSpeed, deletingSpeed, delayBetween])
 
   return (
-    <span className="typing-cursor text-primary font-code">
-      {currentText}
+    <span className="typing-cursor text-primary font-bold font-code">
+      {currentText || "\u00A0"}
     </span>
   )
 }
