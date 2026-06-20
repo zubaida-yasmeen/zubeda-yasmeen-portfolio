@@ -3,7 +3,7 @@
 
 import { TypingEffect } from "./TypingEffect"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Github, Linkedin } from "lucide-react"
+import { ArrowRight, Github, Linkedin, FileText } from "lucide-react"
 import Link from "next/link"
 
 export function Hero() {
@@ -39,6 +39,12 @@ export function Hero() {
               <Link href="#projects">
                 View My Projects
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </Link>
+            </Button>
+            <Button variant="outline" size="lg" className="h-12 px-8 rounded-full font-bold border-border hover:border-primary/50 hover:text-primary transition-all" asChild>
+              <Link href="#" target="_blank">
+                <FileText className="mr-2 h-4 w-4" />
+                Download Resume
               </Link>
             </Button>
             <div className="flex items-center gap-3">
