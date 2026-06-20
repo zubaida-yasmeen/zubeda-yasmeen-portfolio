@@ -31,8 +31,7 @@ export function Hero() {
           </div>
 
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-            Pioneering the intersection of cloud scalability and intelligent systems. 
-            Building resilient infrastructures and community-driven tech initiatives.
+            Building cloud-native systems, AI-powered applications, and leading student communities through AWS.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
