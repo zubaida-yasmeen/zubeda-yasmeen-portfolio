@@ -1,4 +1,3 @@
-
 "use client"
 
 import Link from "next/link"
@@ -16,7 +15,7 @@ const stats = [
   },
   {
     label: "Academic Excellence",
-    value: "3.85 CGPA",
+    value: "9.1 CGPA",
     icon: GraduationCap,
     color: "text-[#8b5cf6]",
     description: "Consistent high performance in CS core curriculum."
