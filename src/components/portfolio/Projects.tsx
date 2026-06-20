@@ -1,10 +1,9 @@
-
 "use client"
 
 import Image from "next/image"
 import Link from "next/link"
 import { Github, ExternalLink } from "lucide-react"
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { PlaceHolderImages } from "@/lib/placeholder-images"
 
@@ -49,13 +48,20 @@ export function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <Card key={index} className="group overflow-hidden border-border bg-card hover:border-primary/50 transition-all duration-300">
-              <div className="relative aspect-video overflow-hidden">
-                <Image 
-                  src={project.image || ""} 
-                  alt={project.title}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                />
+              <div className="relative aspect-video overflow-hidden bg-muted">
+                {project.image ? (
+                  <Image 
+                    src={project.image} 
+                    alt={project.title}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    data-ai-hint="project screenshot"
+                  />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center">
+                    <ExternalLink className="h-10 w-10 text-muted-foreground/20" />
+                  </div>
+                )}
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
                    <Link href={project.github} className="p-3 bg-background rounded-full hover:text-primary transition-colors">
                     <Github className="h-5 w-5" />

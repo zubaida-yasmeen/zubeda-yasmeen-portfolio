@@ -1,3 +1,28 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "project-cloud",
+      "description": "Cloud Architecture Diagram",
+      "imageUrl": "https://picsum.photos/seed/cloud123/800/600",
+      "imageHint": "cloud computing"
+    },
+    {
+      "id": "project-ai",
+      "description": "Artificial Intelligence visualization",
+      "imageUrl": "https://picsum.photos/seed/ai456/800/600",
+      "imageHint": "artificial intelligence"
+    },
+    {
+      "id": "project-devops",
+      "description": "CI/CD Pipeline visualization",
+      "imageUrl": "https://picsum.photos/seed/devops789/800/600",
+      "imageHint": "software development"
+    },
+    {
+      "id": "profile-hero",
+      "description": "Developer portrait placeholder",
+      "imageUrl": "https://picsum.photos/seed/zubeda/400/400",
+      "imageHint": "professional portrait"
+    }
+  ]
 }
