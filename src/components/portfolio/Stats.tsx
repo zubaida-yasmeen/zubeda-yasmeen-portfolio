@@ -26,7 +26,8 @@ const stats = [
     value: "500+ Members",
     icon: Users,
     color: "text-[#22c55e]",
-    description: "Growing the AWS Student Builder Group locally."
+    description: "Growing the AWS Student Builder Group locally.",
+    link: "https://www.meetup.com/aws-sbg-at-mysuru-royal-inst-of-tech/"
   },
   {
     label: "Open Source",
