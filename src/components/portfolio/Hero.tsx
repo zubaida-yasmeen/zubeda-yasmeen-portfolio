@@ -1,9 +1,8 @@
-
 "use client"
 
 import { TypingEffect } from "./TypingEffect"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Github, Linkedin, FileText } from "lucide-react"
+import { ArrowRight, Github, Linkedin, FileText, Trophy } from "lucide-react"
 import Link from "next/link"
 
 export function Hero() {
@@ -16,7 +15,15 @@ export function Hero() {
       <div className="container px-6 mx-auto text-center">
         <div className="space-y-8 max-w-4xl mx-auto animate-fade-in-up">
           <div className="space-y-4">
-            <p className="text-sm font-code uppercase tracking-widest text-accent font-bold">
+            {/* Hackathon Banner */}
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary mb-2 animate-bounce-slow">
+              <Trophy className="h-4 w-4" />
+              <span className="text-xs font-bold tracking-tight uppercase font-code">
+                AWS GenAI Hackathon — 3rd Place National Winner
+              </span>
+            </div>
+
+            <p className="text-sm font-code uppercase tracking-widest text-accent font-bold pt-4">
               Hi, my name is
             </p>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight">
