@@ -3,9 +3,9 @@
   "placeholderImages": [
     {
       "id": "project-cloud",
-      "description": "Cloud Architecture Diagram",
-      "imageUrl": "https://picsum.photos/seed/cloud123/800/600",
-      "imageHint": "cloud computing"
+      "description": "AWS Cloud Club MRIT Website Hero",
+      "imageUrl": "https://picsum.photos/seed/aws-mrit-hero/800/450",
+      "imageHint": "cloud website"
     },
     {
       "id": "project-ai",

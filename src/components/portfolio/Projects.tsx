@@ -11,7 +11,7 @@ import { PlaceHolderImages } from "@/lib/placeholder-images"
 const projects = [
   {
     title: "AWS Cloud Club Site",
-    description: "Official community website for the AWS Cloud Club at MRIT. A hub for student developers to access cloud resources, event schedules, and join a thriving tech community.",
+    description: "The official student-led community website for AWS Cloud Club at MRIT. Learn, Build, and Deploy while connecting with Mysuru Royal Institute of Technology's thriving cloud computing community.",
     image: PlaceHolderImages.find(img => img.id === "project-cloud")?.imageUrl,
     tags: ["AWS", "Next.js", "React", "Tailwind CSS"],
     github: "https://github.com/zubaida-yasmeen/aws-cloud-club-mrit",
@@ -71,7 +71,7 @@ export function Projects() {
               </CardHeader>
               
               <CardContent>
-                <p className="text-sm text-muted-foreground leading-relaxed line-clamp-3">
+                <p className="text-sm text-muted-foreground leading-relaxed">
                   {project.description}
                 </p>
               </CardContent>
