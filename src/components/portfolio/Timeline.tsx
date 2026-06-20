@@ -1,20 +1,33 @@
 
 "use client"
 
+import { ExternalLink, Github, Globe } from "lucide-react"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
+
 const experiences = [
   {
     title: "AWS Student Builder Group Leader",
     organization: "AWS Community",
     period: "April 30, 2025 - Present",
     description: "Spearheading a community of 500+ student developers. Orchestrating workshops on Cloud Architecture, Serverless, and DevOps practices.",
-    color: "bg-[#22c55e]"
+    color: "bg-[#22c55e]",
+    links: [
+      { name: "Meetup", href: "https://www.meetup.com/aws-sbg-at-mysuru-royal-inst-of-tech/", icon: Globe },
+      { name: "Website", href: "https://aws-cloud-club-mrit.vercel.app/", icon: ExternalLink }
+    ]
   },
   {
     title: "AWS Cloud Club Captain",
     organization: "AWS Cloud Club MRIT",
     period: "March 2025 - April 30, 2025",
     description: "Established the official digital presence for the AWS Cloud Club at MRIT, building the foundational community portal and engagement strategy.",
-    color: "bg-primary"
+    color: "bg-primary",
+    links: [
+      { name: "GitHub", href: "https://github.com/zubaida-yasmeen/aws-cloud-club-mrit", icon: Github },
+      { name: "Website", href: "https://aws-cloud-club-mrit.vercel.app/", icon: ExternalLink },
+      { name: "Meetup", href: "https://www.meetup.com/aws-sbg-at-mysuru-royal-inst-of-tech/", icon: Globe }
+    ]
   },
   {
     title: "Google Gemini Campus Ambassador",
@@ -56,7 +69,7 @@ export function Timeline() {
               <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 h-full w-[2px] bg-border group-last:h-0" />
               
               <div className="flex flex-col md:flex-row items-start md:items-center">
-                {/* Desktop Left Side */}
+                {/* Desktop Content Alignment */}
                 <div className={`hidden md:block w-1/2 pr-12 text-right ${index % 2 !== 0 ? 'order-last pl-12 pr-0 text-left' : ''}`}>
                   <span className="text-xs font-code font-bold text-primary mb-2 block">{exp.period}</span>
                   <h4 className="text-xl font-bold">{exp.title}</h4>
@@ -74,9 +87,22 @@ export function Timeline() {
                      <span className="md:hidden text-xs font-code font-bold text-primary mb-2 block">{exp.period}</span>
                      <h4 className="md:hidden text-lg font-bold mb-1">{exp.title}</h4>
                      <p className="md:hidden text-xs text-accent font-medium mb-3">{exp.organization}</p>
-                     <p className="text-sm text-muted-foreground leading-relaxed">
+                     <p className="text-sm text-muted-foreground leading-relaxed mb-4">
                         {exp.description}
                      </p>
+                     
+                     {exp.links && (
+                       <div className={`flex flex-wrap gap-2 ${index % 2 !== 0 ? 'md:justify-end' : ''}`}>
+                         {exp.links.map((link) => (
+                           <Button key={link.name} variant="outline" size="sm" className="h-8 text-[10px] font-code uppercase tracking-tighter" asChild>
+                             <Link href={link.href} target="_blank" rel="noopener noreferrer">
+                               <link.icon className="mr-1 h-3 w-3" />
+                               {link.name}
+                             </Link>
+                           </Button>
+                         ))}
+                       </div>
+                     )}
                   </div>
                 </div>
               </div>
