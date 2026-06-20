@@ -1,4 +1,3 @@
-
 "use client"
 
 import { ExternalLink, Github, Globe } from "lucide-react"
@@ -10,7 +9,7 @@ const experiences = [
     title: "AWS Student Builder Group Leader",
     organization: "AWS Community",
     period: "April 30, 2025 - Present",
-    description: "Spearheading a community of 500+ student developers. Orchestrating workshops on Cloud Architecture, Serverless, and DevOps practices.",
+    description: "Spearheading a community of 300+ student developers. Orchestrating workshops on Cloud Architecture, Serverless, and DevOps practices.",
     color: "bg-[#22c55e]",
     links: [
       { name: "Meetup", href: "https://www.meetup.com/aws-sbg-at-mysuru-royal-inst-of-tech/", icon: Globe },

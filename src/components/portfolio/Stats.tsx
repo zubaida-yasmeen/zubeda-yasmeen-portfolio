@@ -15,14 +15,14 @@ const stats = [
   },
   {
     label: "Academic Excellence",
-    value: "9.1 CGPA",
+    value: "8.96 CGPA",
     icon: GraduationCap,
     color: "text-[#8b5cf6]",
     description: "Consistent high performance in CS core curriculum."
   },
   {
     label: "Community Growth",
-    value: "500+ Members",
+    value: "300+ Signups",
     icon: Users,
     color: "text-[#22c55e]",
     description: "Growing the AWS Student Builder Group locally.",
@@ -30,7 +30,7 @@ const stats = [
   },
   {
     label: "Open Source",
-    value: "20+ Projects",
+    value: "4+ Projects",
     icon: Github,
     color: "text-primary",
     description: "Active contributions to cloud-native ecosystems."
