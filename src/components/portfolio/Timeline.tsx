@@ -3,6 +3,20 @@
 
 const experiences = [
   {
+    title: "AWS Student Builder Group Leader",
+    organization: "AWS Community",
+    period: "April 30, 2025 - Present",
+    description: "Spearheading a community of 500+ student developers. Orchestrating workshops on Cloud Architecture, Serverless, and DevOps practices.",
+    color: "bg-[#22c55e]"
+  },
+  {
+    title: "AWS Cloud Club Captain",
+    organization: "AWS Cloud Club MRIT",
+    period: "March 2025 - April 30, 2025",
+    description: "Established the official digital presence for the AWS Cloud Club at MRIT, building the foundational community portal and engagement strategy.",
+    color: "bg-primary"
+  },
+  {
     title: "Google Gemini Campus Ambassador",
     organization: "Google AI",
     period: "July 2025 - Dec 2025",
@@ -15,20 +29,6 @@ const experiences = [
     period: "June 2025 - Present",
     description: "Fostering a competitive spirit by connecting students with hackathons and career opportunities through the Unstop platform.",
     color: "bg-[#ec4899]"
-  },
-  {
-    title: "AWS Student Builder Group Leader",
-    organization: "AWS Community",
-    period: "April 30, 2025 - Present",
-    description: "Spearheading a community of 500+ student developers. Orchestrating workshops on Cloud Architecture, Serverless, and DevOps practices.",
-    color: "bg-[#22c55e]"
-  },
-  {
-    title: "Founder and Lead of AWS Cloud Club Site",
-    organization: "AWS Cloud Club MRIT",
-    period: "March 2025 - April 30, 2025",
-    description: "Established the official digital presence for the AWS Cloud Club at MRIT, building the foundational community portal and engagement strategy.",
-    color: "bg-primary"
   },
   {
     title: "Software Engineer Intern",
