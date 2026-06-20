@@ -3,32 +3,39 @@
 
 const experiences = [
   {
-    title: "AWS Student Builder Group Leader",
-    organization: "AWS Community",
-    period: "2023 - Present",
-    description: "Spearheading a community of 500+ student developers. Orchestrating workshops on Cloud Architecture, Serverless, and DevOps practices.",
+    title: "Google Gemini Campus Ambassador",
+    organization: "Google AI",
+    period: "July 2025 - Dec 2025",
+    description: "Representing Google Gemini on campus to drive AI awareness. Organizing developer sessions and workshops focused on generative AI technologies.",
     color: "bg-[#8b5cf6]"
   },
   {
-    title: "Cloud Infrastructure Intern",
-    organization: "Tech Solutions Global",
-    period: "Summer 2023",
-    description: "Automated deployment pipelines for multi-region AWS environments, reducing manual intervention by 40% through IaC (Terraform).",
+    title: "Unstop Campus Ambassador",
+    organization: "Unstop",
+    period: "June 2025 - Present",
+    description: "Fostering a competitive spirit by connecting students with hackathons and career opportunities through the Unstop platform.",
     color: "bg-[#ec4899]"
   },
   {
-    title: "Community Initiative Lead",
-    organization: "Women In Tech",
-    period: "2022 - 2023",
-    description: "Mentoring upcoming female engineers in cloud computing. Developed a curriculum for 'Cloud Foundations 101'.",
+    title: "AWS Student Builder Group Leader",
+    organization: "AWS Community",
+    period: "April 30, 2025 - Present",
+    description: "Spearheading a community of 500+ student developers. Orchestrating workshops on Cloud Architecture, Serverless, and DevOps practices.",
     color: "bg-[#22c55e]"
   },
   {
-    title: "Volunteer Developer",
-    organization: "OpenSource Fellowship",
-    period: "2021 - 2022",
-    description: "Contributed to core CLI tools for cloud management, focusing on usability and performance optimization.",
+    title: "Founder and Lead of AWS Cloud Club Site",
+    organization: "AWS Cloud Club MRIT",
+    period: "March 2025 - April 30, 2025",
+    description: "Established the official digital presence for the AWS Cloud Club at MRIT, building the foundational community portal and engagement strategy.",
     color: "bg-primary"
+  },
+  {
+    title: "Software Engineer Intern",
+    organization: "Motion Cut",
+    period: "Dec 2023 - Jan 2024",
+    description: "Focused on web development and software engineering workflows during an intensive one-month internship program.",
+    color: "bg-accent"
   }
 ]
 
