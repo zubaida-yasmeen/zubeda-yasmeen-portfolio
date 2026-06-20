@@ -1,4 +1,3 @@
-
 "use client"
 
 import * as React from "react"
@@ -39,11 +38,7 @@ export function Navbar() {
         isScrolled ? "bg-background/95 backdrop-blur-md shadow-lg py-3" : "bg-transparent"
       )}
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <Link href="#home" className="text-xl font-bold tracking-tighter hover:opacity-80 transition-opacity">
-          ZY<span className="text-primary">.</span>
-        </Link>
-
+      <div className="max-w-7xl mx-auto flex items-center justify-end">
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
           <div className="flex items-center gap-6">
