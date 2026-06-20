@@ -3,7 +3,7 @@
 
 import { TypingEffect } from "./TypingEffect"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Github, Linkedin, Twitter } from "lucide-react"
+import { ArrowRight, Github, Linkedin } from "lucide-react"
 import Link from "next/link"
 
 export function Hero() {
@@ -38,13 +38,14 @@ export function Hero() {
             </Button>
             <div className="flex items-center gap-2">
               <Button variant="outline" size="icon" className="h-12 w-12 rounded-full" asChild>
-                <Link href="https://github.com"><Github className="h-5 w-5" /></Link>
+                <Link href="https://github.com/zubaida-yasmeen" target="_blank" rel="noopener noreferrer">
+                  <Github className="h-5 w-5" />
+                </Link>
               </Button>
               <Button variant="outline" size="icon" className="h-12 w-12 rounded-full" asChild>
-                <Link href="https://linkedin.com"><Linkedin className="h-5 w-5" /></Link>
-              </Button>
-              <Button variant="outline" size="icon" className="h-12 w-12 rounded-full" asChild>
-                <Link href="https://twitter.com"><Twitter className="h-5 w-5" /></Link>
+                <Link href="https://www.linkedin.com/in/zubeda-yasmeen/" target="_blank" rel="noopener noreferrer">
+                  <Linkedin className="h-5 w-5" />
+                </Link>
               </Button>
             </div>
           </div>

@@ -2,7 +2,7 @@
 "use client"
 
 import Link from "next/link"
-import { Github, Linkedin, Mail, Twitter, ChevronUp } from "lucide-react"
+import { Github, Linkedin, Mail, ChevronUp } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function Footer() {
@@ -30,9 +30,22 @@ export function Footer() {
               </Link>
             </Button>
             <div className="flex items-center gap-4">
-              <Link href="#" className="p-3 text-muted-foreground hover:text-primary transition-colors"><Github className="h-6 w-6" /></Link>
-              <Link href="#" className="p-3 text-muted-foreground hover:text-primary transition-colors"><Linkedin className="h-6 w-6" /></Link>
-              <Link href="#" className="p-3 text-muted-foreground hover:text-primary transition-colors"><Twitter className="h-6 w-6" /></Link>
+              <Link 
+                href="https://github.com/zubaida-yasmeen" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="p-3 text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Github className="h-6 w-6" />
+              </Link>
+              <Link 
+                href="https://www.linkedin.com/in/zubeda-yasmeen/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="p-3 text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Linkedin className="h-6 w-6" />
+              </Link>
             </div>
           </div>
 
