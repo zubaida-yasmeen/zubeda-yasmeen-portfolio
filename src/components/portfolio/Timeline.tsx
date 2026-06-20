@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 
 const experiences = [
   {
-    title: "AWS Student Builder Group Leader",
+    title: "Founder & Lead — AWS Student Builder Group MRIT",
     organization: "AWS Community",
     period: "April 30, 2025 - Present",
     description: "Spearheading a community of 300+ student developers. Orchestrating workshops on Cloud Architecture, Serverless, and DevOps practices.",
@@ -17,7 +17,7 @@ const experiences = [
     ]
   },
   {
-    title: "AWS Cloud Club Captain",
+    title: "Cloud Captain — Mysuru Royal Institute of Technology",
     organization: "AWS Cloud Club MRIT",
     period: "March 2025 - April 30, 2025",
     description: "Established the official digital presence for the AWS Cloud Club at MRIT, building the foundational community portal and engagement strategy.",
