@@ -2,6 +2,7 @@
 {
   "nav": {
     "home": "Home",
+    "about": "About",
     "skills": "Skills",
     "stats": "Stats",
     "projects": "Projects",
@@ -18,6 +19,18 @@
     "description": "Building cloud-native systems, AI-powered applications, and leading student communities through AWS.",
     "view_projects": "View My Projects",
     "download_resume": "Download Resume"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Engineering the Future with Cloud & AI",
+    "story": "I am a Computer Science and Engineering student at Mysuru Royal Institute of Technology (MRIT) with a deep passion for building scalable solutions. As the Founder and Lead of the AWS Student Builder Group at MRIT, I bridge the gap between academic theory and industry practice.",
+    "highlight_edu": "CSE Student at MRIT",
+    "highlight_lead": "AWS SBG Founder & Lead",
+    "highlight_tech": "Full-Stack Cloud Builder",
+    "achievements_title": "Proven Excellence",
+    "achievements_text": "I secured the 3rd place nationally at the AWS GenAI Hackathon, demonstrating my ability to design and implement complex AI-driven architectures under pressure. My work focuses on making sophisticated technology accessible and impactful.",
+    "interests_title": "Core Focus",
+    "interests_text": "I specialize in Cloud Infrastructure, AI Systems, and DevOps. I am dedicated to creating systems that aren't just functional, but are also efficient, secure, and ready to scale."
   },
   "skills": {
     "title": "Technical Stack",

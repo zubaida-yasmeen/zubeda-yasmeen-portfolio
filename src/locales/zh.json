@@ -2,6 +2,7 @@
 {
   "nav": {
     "home": "首页",
+    "about": "关于我",
     "skills": "技能",
     "stats": "统计",
     "projects": "项目",
@@ -18,6 +19,18 @@
     "description": "致力于构建云原生系统、AI 驱动的应用，并通过 AWS 领导学生社区。",
     "view_projects": "查看我的项目",
     "download_resume": "下载简历"
+  },
+  "about": {
+    "title": "关于我",
+    "subtitle": "利用云和 AI 构建未来",
+    "story": "我是 MRIT 的计算机科学学生，热衷于构建可扩展的解决方案。作为 AWS 学生建设者团体的创始人，我致力于连接学术与实践。",
+    "highlight_edu": "MRIT 计算机学生",
+    "highlight_lead": "AWS SBG 创始人",
+    "highlight_tech": "云端建设者",
+    "achievements_title": "卓越成就",
+    "achievements_text": "荣获 AWS GenAI 黑客松全国第三名。我擅长设计高效且具有影响力的 AI 驱动架构。",
+    "interests_title": "核心专注",
+    "interests_text": "专注于云基础设施、AI 系统和 DevOps。我致力于创建高效、安全且可扩展的系统。"
   },
   "skills": {
     "title": "技术栈",

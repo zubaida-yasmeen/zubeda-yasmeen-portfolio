@@ -2,6 +2,7 @@
 {
   "nav": {
     "home": "ホーム",
+    "about": "私について",
     "skills": "スキル",
     "stats": "統計",
     "projects": "プロジェクト",
@@ -18,6 +19,18 @@
     "description": "クラウドネイティブシステムの構築、AI搭載アプリケーションの開発、そしてAWSを通じた学生コミュニティの指導を行っています。",
     "view_projects": "プロジェクトを見る",
     "download_resume": "履歴書をダウンロード"
+  },
+  "about": {
+    "title": "私について",
+    "subtitle": "クラウドとAIで未来を拓く",
+    "story": "MRITのコンピュータサイエンスの学生で、スケーラブルなソリューションの構築に情熱を注いでいます。AWS Student Builder Groupの創設者として、学問と実務の架け橋となっています。",
+    "highlight_edu": "MRITのCS専攻学生",
+    "highlight_lead": "AWS SBG 創設者",
+    "highlight_tech": "クラウドビルダー",
+    "achievements_title": "実績",
+    "achievements_text": "AWS GenAIハッカソン全国3位。複雑なAI駆動アーキテクチャの設計と実装を得意としています。",
+    "interests_title": "専門分野",
+    "interests_text": "クラウドインフラ、AIシステム、DevOpsを専門としています。効率的で安全なシステムを構築します。"
   },
   "skills": {
     "title": "技術スタック",

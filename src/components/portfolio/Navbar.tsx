@@ -29,6 +29,11 @@ const languages = [
 
 function LanguageSwitcher() {
   const { language, setLanguage } = useTranslation()
+  const [mounted, setMounted] = React.useState(false)
+
+  React.useEffect(() => {
+    setMounted(true)
+  }, [])
   
   return (
     <DropdownMenu>
@@ -42,7 +47,7 @@ function LanguageSwitcher() {
           <DropdownMenuItem 
             key={lang.code}
             onClick={() => setLanguage(lang.code as any)}
-            className={cn("flex items-center gap-2", language === lang.code && "bg-accent")}
+            className={cn("flex items-center gap-2", mounted && language === lang.code && "bg-accent")}
           >
             <span className="text-lg">{lang.flag}</span>
             <span className="text-sm font-medium">{lang.label}</span>
@@ -57,7 +62,7 @@ export function Navbar() {
   const [isScrolled, setIsScrolled] = React.useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false)
   const [isDark, setIsDark] = React.useState(true)
-  const { language, setLanguage, t } = useTranslation()
+  const { t } = useTranslation()
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -74,6 +79,7 @@ export function Navbar() {
 
   const navLinks = [
     { name: t("nav.home"), href: "#home" },
+    { name: t("nav.about"), href: "#about" },
     { name: t("nav.skills"), href: "#skills" },
     { name: t("nav.stats"), href: "#stats" },
     { name: t("nav.projects"), href: "#projects" },

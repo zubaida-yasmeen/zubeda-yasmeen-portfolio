@@ -2,6 +2,7 @@
 {
   "nav": {
     "home": "Home",
+    "about": "Over",
     "skills": "Vaardigheden",
     "stats": "Statistieken",
     "projects": "Projecten",
@@ -18,6 +19,18 @@
     "description": "Bouwen aan cloud-native systemen, AI-gestuurde applicaties en het leiden van studentengemeenschappen via AWS.",
     "view_projects": "Bekijk Projecten",
     "download_resume": "CV Downloaden"
+  },
+  "about": {
+    "title": "Over Mij",
+    "subtitle": "De toekomst bouwen met Cloud & AI",
+    "story": "Informaticastudent aan het MRIT met een passie voor schaalbare oplossingen. Als oprichter van de AWS Student Builder Group sla ik de brug tussen theorie en praktijk.",
+    "highlight_edu": "Informaticastudent aan MRIT",
+    "highlight_lead": "Oprichter AWS SBG",
+    "highlight_tech": "Cloud Bouwer",
+    "achievements_title": "Excellence",
+    "achievements_text": "3e plaats nationaal bij de AWS GenAI hackathon. Ik ontwerp complexe AI-architecturen die impact maken.",
+    "interests_title": "Focus",
+    "interests_text": "Gespecialiseerd in Cloud, AI en DevOps. Ik creëer efficiënte, veilige en schaalbare systemen."
   },
   "skills": {
     "title": "Technische Stack",

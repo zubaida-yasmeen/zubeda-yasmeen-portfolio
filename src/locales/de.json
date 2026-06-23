@@ -2,6 +2,7 @@
 {
   "nav": {
     "home": "Start",
+    "about": "Über mich",
     "skills": "Fähigkeiten",
     "stats": "Statistiken",
     "projects": "Projekte",
@@ -18,6 +19,18 @@
     "description": "Entwicklung von Cloud-nativen Systemen, KI-gestützten Anwendungen und Leitung von Studentengemeinschaften über AWS.",
     "view_projects": "Projekte ansehen",
     "download_resume": "Lebenslauf laden"
+  },
+  "about": {
+    "title": "Über mich",
+    "subtitle": "Die Zukunft mit Cloud & KI gestalten",
+    "story": "Ich bin Informatikstudent am Mysuru Royal Institute of Technology (MRIT) mit einer Leidenschaft für skalierbare Lösungen. Als Gründer der AWS Student Builder Group schlage ich die Brücke zwischen Theorie und Praxis.",
+    "highlight_edu": "Informatikstudent am MRIT",
+    "highlight_lead": "Gründer der AWS SBG",
+    "highlight_tech": "Cloud-Entwickler",
+    "achievements_title": "Erfolge",
+    "achievements_text": "3. Platz beim AWS GenAI Hackathon. Ich entwickle komplexe, KI-gestützte Architekturen, die zugänglich und wirkungsvoll sind.",
+    "interests_title": "Fokus",
+    "interests_text": "Spezialisiert auf Cloud-Infrastruktur, KI-Systeme und DevOps. Ich schaffe effiziente und sichere Systeme."
   },
   "skills": {
     "title": "Technischer Stack",

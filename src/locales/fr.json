@@ -2,6 +2,7 @@
 {
   "nav": {
     "home": "Accueil",
+    "about": "À propos",
     "skills": "Compétences",
     "stats": "Stats",
     "projects": "Projets",
@@ -18,6 +19,18 @@
     "description": "Construction de systèmes natifs cloud, d'applications alimentées par l'IA et direction de communautés étudiantes via AWS.",
     "view_projects": "Voir mes projets",
     "download_resume": "Télécharger le CV"
+  },
+  "about": {
+    "title": "À Propos",
+    "subtitle": "Façonner l'avenir avec le Cloud et l'IA",
+    "story": "Étudiant en informatique au MRIT, je suis passionné par les solutions évolutives. En tant que fondateur du groupe AWS Student Builder, je relie la théorie académique à la pratique industrielle.",
+    "highlight_edu": "Étudiant en informatique au MRIT",
+    "highlight_lead": "Fondateur AWS SBG",
+    "highlight_tech": "Développeur Cloud",
+    "achievements_title": "Excellence",
+    "achievements_text": "3ème place nationale au hackathon AWS GenAI. Je conçois des architectures IA complexes et efficaces.",
+    "interests_title": "Spécialisation",
+    "interests_text": "Expert en infrastructure Cloud, systèmes IA et DevOps. Je crée des systèmes sécurisés et prêts pour l'échelle."
   },
   "skills": {
     "title": "Stack Technique",
