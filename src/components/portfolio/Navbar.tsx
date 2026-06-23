@@ -27,6 +27,32 @@ const languages = [
   { code: 'nl', label: 'Nederlands', flag: '🇳🇱' },
 ]
 
+function LanguageSwitcher() {
+  const { language, setLanguage } = useTranslation()
+  
+  return (
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button variant="ghost" size="icon" className="h-9 w-9">
+          <Globe className="h-4 w-4" />
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end" className="w-40">
+        {languages.map((lang) => (
+          <DropdownMenuItem 
+            key={lang.code}
+            onClick={() => setLanguage(lang.code as any)}
+            className={cn("flex items-center gap-2", language === lang.code && "bg-accent")}
+          >
+            <span className="text-lg">{lang.flag}</span>
+            <span className="text-sm font-medium">{lang.label}</span>
+          </DropdownMenuItem>
+        ))}
+      </DropdownMenuContent>
+    </DropdownMenu>
+  )
+}
+
 export function Navbar() {
   const [isScrolled, setIsScrolled] = React.useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false)
@@ -55,28 +81,6 @@ export function Navbar() {
     { name: t("nav.certifications"), href: "#certifications" },
     { name: t("nav.experience"), href: "#experience" },
   ]
-
-  const LanguageSwitcher = () => (
-    <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="icon" className="h-9 w-9">
-          <Globe className="h-4 w-4" />
-        </Button>
-      </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="w-40">
-        {languages.map((lang) => (
-          <DropdownMenuItem 
-            key={lang.code}
-            onClick={() => setLanguage(lang.code as any)}
-            className={cn("flex items-center gap-2", language === lang.code && "bg-accent")}
-          >
-            <span className="text-lg">{lang.flag}</span>
-            <span className="text-sm font-medium">{lang.label}</span>
-          </DropdownMenuItem>
-        ))}
-      </DropdownMenuContent>
-    </DropdownMenu>
-  )
 
   return (
     <nav 
