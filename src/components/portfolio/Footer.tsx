@@ -28,7 +28,7 @@ export function Footer() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-4">
             <Button size="lg" className="rounded-full h-14 px-8 font-bold bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-300 shadow-lg shadow-primary/20" asChild>
-              <Link href="mailto:zubeda@example.com">
+              <Link href="mailto:zubedayasmeen1610@gmail.com">
                 <Mail className="mr-2 h-5 w-5" />
                 {t("contact.button")}
               </Link>
