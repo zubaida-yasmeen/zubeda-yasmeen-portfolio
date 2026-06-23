@@ -1,0 +1,63 @@
+
+{
+  "nav": {
+    "home": "Inicio",
+    "skills": "Habilidades",
+    "stats": "Estadísticas",
+    "projects": "Proyectos",
+    "articles": "Artículos",
+    "certifications": "Certificados",
+    "experience": "Experiencia",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "hackathon": "AWS GenAI Hackathon — 3er Puesto Ganador Nacional",
+    "intro": "Hola, mi nombre es",
+    "iam": "Soy un",
+    "phrases": ["Ingeniero Cloud", "Constructor de IA", "Líder Comunitario", "Mentor Estudiantil"],
+    "description": "Construyendo sistemas nativos de la nube, aplicaciones impulsadas por IA y liderando comunidades estudiantiles a través de AWS.",
+    "view_projects": "Ver mis proyectos",
+    "download_resume": "Descargar CV"
+  },
+  "skills": {
+    "title": "Stack Técnico",
+    "subtitle": "Competencias Principales",
+    "cloud": "Cloud",
+    "programming": "Programación",
+    "tools": "Herramientas"
+  },
+  "stats": {
+    "hackathon_label": "AWS GenAI Hackathon",
+    "hackathon_desc": "Reconocimiento regional por escalado innovador de IA.",
+    "academic_label": "Excelencia Académica",
+    "academic_desc": "Alto rendimiento constante en el currículo principal de CS.",
+    "community_label": "Crecimiento Comunitario",
+    "community_desc": "Haciendo crecer el AWS Student Builder Group localmente.",
+    "open_source_label": "Open Source",
+    "open_source_desc": "Contribuciones activas a ecosistemas nativos de la nube."
+  },
+  "projects": {
+    "title": "Escaparate",
+    "subtitle": "Proyectos Destacados"
+  },
+  "publications": {
+    "title": "Compartir Conocimiento",
+    "subtitle": "Artículos y Publicaciones",
+    "profile_btn": "Ver perfil de Builder @zubaidayasmeen",
+    "read_more": "Leer artículo"
+  },
+  "certifications": {
+    "title": "Validación",
+    "subtitle": "Certificaciones y Placas"
+  },
+  "experience": {
+    "title": "Trayectoria",
+    "subtitle": "Experiencia Profesional"
+  },
+  "contact": {
+    "title": "Abierto a pasantías, roles en la nube, colaboraciones de IA y oportunidades de ingeniería de software.",
+    "subtitle": "¡Mi bandeja de entrada siempre está abierta, ya sea que tengas una pregunta, una idea de proyecto o simplemente quieras saludar!",
+    "button": "Ponerse en contacto",
+    "copyright": "Construido con pasión e infraestructura en la nube."
+  }
+}

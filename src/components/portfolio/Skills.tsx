@@ -1,39 +1,43 @@
+
 "use client"
 
-import { Cloud, Code, Settings, Terminal, Database, Globe } from "lucide-react"
+import { Cloud, Code, Settings } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-
-const skillCategories = [
-  {
-    title: "Cloud",
-    icon: Cloud,
-    color: "text-blue-500",
-    skills: ["AWS EC2", "S3", "IAM", "VPC"]
-  },
-  {
-    title: "Programming",
-    icon: Code,
-    color: "text-green-500",
-    skills: ["Java", "Python", "C"]
-  },
-  {
-    title: "Tools",
-    icon: Settings,
-    color: "text-orange-500",
-    skills: ["GitHub", "Linux", "Firebase", "Next.js"]
-  }
-]
+import { useTranslation } from "./LanguageContext"
 
 export function Skills() {
+  const { t } = useTranslation()
+
+  const skillCategories = [
+    {
+      title: t("skills.cloud"),
+      icon: Cloud,
+      color: "text-blue-500",
+      skills: ["AWS EC2", "S3", "IAM", "VPC"]
+    },
+    {
+      title: t("skills.programming"),
+      icon: Code,
+      color: "text-green-500",
+      skills: ["Java", "Python", "C"]
+    },
+    {
+      title: t("skills.tools"),
+      icon: Settings,
+      color: "text-orange-500",
+      skills: ["GitHub", "Linux", "Firebase", "Next.js"]
+    }
+  ]
+
   return (
     <section id="skills" className="py-24 bg-background">
       <div className="container px-6 mx-auto">
         <div className="mb-16 text-center">
           <h2 className="text-sm font-code uppercase tracking-widest text-primary font-bold mb-4">
-            Technical Stack
+            {t("skills.title")}
           </h2>
-          <h3 className="text-4xl font-bold tracking-tight">Core Competencies</h3>
+          <h3 className="text-4xl font-bold tracking-tight">{t("skills.subtitle")}</h3>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">

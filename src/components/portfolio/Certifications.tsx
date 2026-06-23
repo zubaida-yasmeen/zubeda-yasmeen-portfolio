@@ -1,3 +1,4 @@
+
 "use client"
 
 import { Award, ShieldCheck, Cpu, Cloud, ExternalLink } from "lucide-react"
@@ -5,6 +6,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import { useTranslation } from "./LanguageContext"
 
 const certifications = [
   {
@@ -46,14 +48,16 @@ const certifications = [
 ]
 
 export function Certifications() {
+  const { t } = useTranslation()
+
   return (
     <section id="certifications" className="py-24">
       <div className="container px-6 mx-auto">
         <div className="mb-16 text-center">
           <h2 className="text-sm font-code uppercase tracking-widest text-primary font-bold mb-4">
-            Validation
+            {t("certifications.title")}
           </h2>
-          <h3 className="text-4xl font-bold tracking-tight">Certifications & Badges</h3>
+          <h3 className="text-4xl font-bold tracking-tight">{t("certifications.subtitle")}</h3>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

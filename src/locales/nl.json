@@ -1,0 +1,63 @@
+
+{
+  "nav": {
+    "home": "Home",
+    "skills": "Vaardigheden",
+    "stats": "Statistieken",
+    "projects": "Projecten",
+    "articles": "Artikelen",
+    "certifications": "Certificaten",
+    "experience": "Ervaring",
+    "contact": "Contact"
+  },
+  "hero": {
+    "hackathon": "AWS GenAI Hackathon — 3e Plaats Landelijke Winnaar",
+    "intro": "Hallo, mijn naam is",
+    "iam": "Ik ben een",
+    "phrases": ["Cloud Engineer", "AI Bouwer", "Community Leider", "Student Mentor"],
+    "description": "Bouwen aan cloud-native systemen, AI-gestuurde applicaties en het leiden van studentengemeenschappen via AWS.",
+    "view_projects": "Bekijk Projecten",
+    "download_resume": "CV Downloaden"
+  },
+  "skills": {
+    "title": "Technische Stack",
+    "subtitle": "Kerncompetenties",
+    "cloud": "Cloud",
+    "programming": "Programmeren",
+    "tools": "Tools"
+  },
+  "stats": {
+    "hackathon_label": "AWS GenAI Hackathon",
+    "hackathon_desc": "Regionale erkenning voor innovatieve AI-schaling.",
+    "academic_label": "Academische Uitmuntendheid",
+    "academic_desc": "Consistente hoge prestaties in het kerncurriculum van CS.",
+    "community_label": "Community Groei",
+    "community_desc": "De AWS Student Builder Group lokaal laten groeien.",
+    "open_source_label": "Open Source",
+    "open_source_desc": "Actieve bijdragen aan cloud-native ecosystemen."
+  },
+  "projects": {
+    "title": "Showcase",
+    "subtitle": "Uitgelichte Projecten"
+  },
+  "publications": {
+    "title": "Kennis Delen",
+    "subtitle": "Artikelen & Publicaties",
+    "profile_btn": "Bekijk Builder Profiel @zubaidayasmeen",
+    "read_more": "Lees Artikel"
+  },
+  "certifications": {
+    "title": "Validatie",
+    "subtitle": "Certificeringen & Badges"
+  },
+  "experience": {
+    "title": "Reis",
+    "subtitle": "Werkervaring"
+  },
+  "contact": {
+    "title": "Open voor stages, cloud-rollen, AI-samenwerkingen en software engineering kansen.",
+    "subtitle": "Mijn inbox staat altijd open, of je nu een vraag hebt, een projectidee of gewoon hallo wilt zeggen!",
+    "button": "Contact Opnemen",
+    "copyright": "Gebouwd met passie en cloud-infrastructuur."
+  }
+}

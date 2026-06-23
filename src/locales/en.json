@@ -1,0 +1,63 @@
+
+{
+  "nav": {
+    "home": "Home",
+    "skills": "Skills",
+    "stats": "Stats",
+    "projects": "Projects",
+    "articles": "Articles",
+    "certifications": "Certs",
+    "experience": "Journey",
+    "contact": "Let's Talk"
+  },
+  "hero": {
+    "hackathon": "AWS GenAI Hackathon — 3rd Place National Winner",
+    "intro": "Hi, my name is",
+    "iam": "I am a",
+    "phrases": ["Cloud Engineer", "AI Builder", "Community Leader", "Student Mentor"],
+    "description": "Building cloud-native systems, AI-powered applications, and leading student communities through AWS.",
+    "view_projects": "View My Projects",
+    "download_resume": "Download Resume"
+  },
+  "skills": {
+    "title": "Technical Stack",
+    "subtitle": "Core Competencies",
+    "cloud": "Cloud",
+    "programming": "Programming",
+    "tools": "Tools"
+  },
+  "stats": {
+    "hackathon_label": "AWS GenAI Hackathon",
+    "hackathon_desc": "Regional recognition for innovative AI scaling.",
+    "academic_label": "Academic Excellence",
+    "academic_desc": "Consistent high performance in CS core curriculum.",
+    "community_label": "Community Growth",
+    "community_desc": "Growing the AWS Student Builder Group locally.",
+    "open_source_label": "Open Source",
+    "open_source_desc": "Active contributions to cloud-native ecosystems."
+  },
+  "projects": {
+    "title": "Showcase",
+    "subtitle": "Featured Projects"
+  },
+  "publications": {
+    "title": "Knowledge Sharing",
+    "subtitle": "Articles & Publications",
+    "profile_btn": "View Builder Profile @zubaidayasmeen",
+    "read_more": "Read Article"
+  },
+  "certifications": {
+    "title": "Validation",
+    "subtitle": "Certifications & Badges"
+  },
+  "experience": {
+    "title": "Journey",
+    "subtitle": "Professional Experience"
+  },
+  "contact": {
+    "title": "Open to internships, cloud roles, AI collaborations, and software engineering opportunities.",
+    "subtitle": "My inbox is always open whether you have a question, a project idea, or just want to say hi!",
+    "button": "Get In Touch",
+    "copyright": "Built with passion and cloud infrastructure."
+  }
+}

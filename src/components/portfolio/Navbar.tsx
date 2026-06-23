@@ -1,15 +1,36 @@
+
 "use client"
 
 import * as React from "react"
 import Link from "next/link"
-import { Moon, Sun, Menu, X, Github, Linkedin, Mail } from "lucide-react"
+import { Moon, Sun, Menu, X, Globe } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
+import { useTranslation } from "./LanguageContext"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+
+const languages = [
+  { code: 'en', label: 'English', flag: '🇺🇸' },
+  { code: 'de', label: 'Deutsch', flag: '🇩🇪' },
+  { code: 'fr', label: 'Français', flag: '🇫🇷' },
+  { code: 'es', label: 'Español', flag: '🇪🇸' },
+  { code: 'ja', label: '日本語', flag: '🇯🇵' },
+  { code: 'ko', label: '한국어', flag: '🇰🇷' },
+  { code: 'zh', label: '简体中文', flag: '🇨🇳' },
+  { code: 'pt', label: 'Português', flag: '🇵🇹' },
+  { code: 'nl', label: 'Nederlands', flag: '🇳🇱' },
+]
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = React.useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false)
   const [isDark, setIsDark] = React.useState(true)
+  const { language, setLanguage, t } = useTranslation()
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -25,14 +46,36 @@ export function Navbar() {
   }
 
   const navLinks = [
-    { name: "Home", href: "#home" },
-    { name: "Skills", href: "#skills" },
-    { name: "Stats", href: "#stats" },
-    { name: "Projects", href: "#projects" },
-    { name: "Articles", href: "#publications" },
-    { name: "Certifications", href: "#certifications" },
-    { name: "Experience", href: "#experience" },
+    { name: t("nav.home"), href: "#home" },
+    { name: t("nav.skills"), href: "#skills" },
+    { name: t("nav.stats"), href: "#stats" },
+    { name: t("nav.projects"), href: "#projects" },
+    { name: t("nav.articles"), href: "#publications" },
+    { name: t("nav.certifications"), href: "#certifications" },
+    { name: t("nav.experience"), href: "#experience" },
   ]
+
+  const LanguageSwitcher = () => (
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button variant="ghost" size="icon" className="h-9 w-9">
+          <Globe className="h-4 w-4" />
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end" className="w-40">
+        {languages.map((lang) => (
+          <DropdownMenuItem 
+            key={lang.code}
+            onClick={() => setLanguage(lang.code as any)}
+            className={cn("flex items-center gap-2", language === lang.code && "bg-accent")}
+          >
+            <span className="text-lg">{lang.flag}</span>
+            <span className="text-sm font-medium">{lang.label}</span>
+          </DropdownMenuItem>
+        ))}
+      </DropdownMenuContent>
+    </DropdownMenu>
+  )
 
   return (
     <nav 
@@ -41,7 +84,9 @@ export function Navbar() {
         isScrolled ? "bg-background/95 backdrop-blur-md shadow-lg py-3" : "bg-transparent"
       )}
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-end">
+      <div className="max-w-7xl mx-auto flex items-center justify-between">
+        <div className="flex-1 hidden md:block" />
+        
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
           <div className="flex items-center gap-6">
@@ -59,23 +104,28 @@ export function Navbar() {
           <div className="h-4 w-[1px] bg-border mx-2" />
 
           <div className="flex items-center gap-2">
+            <LanguageSwitcher />
             <Button variant="ghost" size="icon" onClick={toggleTheme}>
               {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
             </Button>
             <Button variant="default" size="sm" className="hidden lg:flex" asChild>
-              <Link href="#contact">Let's Talk</Link>
+              <Link href="#contact">{t("nav.contact")}</Link>
             </Button>
           </div>
         </div>
 
         {/* Mobile Toggle */}
-        <div className="flex md:hidden items-center gap-2">
-           <Button variant="ghost" size="icon" onClick={toggleTheme}>
-              {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+        <div className="flex md:hidden items-center justify-between w-full">
+          <div />
+          <div className="flex items-center gap-2">
+            <LanguageSwitcher />
+             <Button variant="ghost" size="icon" onClick={toggleTheme}>
+                {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+              </Button>
+            <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+              {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
-          <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
-            {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </Button>
+          </div>
         </div>
       </div>
 
@@ -93,7 +143,7 @@ export function Navbar() {
             </Link>
           ))}
           <Button className="w-full mt-4" asChild onClick={() => setIsMobileMenuOpen(false)}>
-            <Link href="#contact">Let's Talk</Link>
+            <Link href="#contact">{t("nav.contact")}</Link>
           </Button>
         </div>
       )}

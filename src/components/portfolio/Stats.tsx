@@ -1,43 +1,47 @@
+
 "use client"
 
 import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
 import { Trophy, GraduationCap, Users, Github } from "lucide-react"
-
-const stats = [
-  {
-    label: "AWS GenAI Hackathon",
-    value: "3rd Place",
-    icon: Trophy,
-    color: "text-[#ec4899]",
-    description: "Regional recognition for innovative AI scaling.",
-    link: "https://www.ps-events.in/genai-hackathon/"
-  },
-  {
-    label: "Academic Excellence",
-    value: "8.96 CGPA",
-    icon: GraduationCap,
-    color: "text-[#8b5cf6]",
-    description: "Consistent high performance in CS core curriculum."
-  },
-  {
-    label: "Community Growth",
-    value: "300+ Signups",
-    icon: Users,
-    color: "text-[#22c55e]",
-    description: "Growing the AWS Student Builder Group locally.",
-    link: "https://www.meetup.com/aws-sbg-at-mysuru-royal-inst-of-tech/"
-  },
-  {
-    label: "Open Source",
-    value: "4+ Projects",
-    icon: Github,
-    color: "text-primary",
-    description: "Active contributions to cloud-native ecosystems."
-  }
-]
+import { useTranslation } from "./LanguageContext"
 
 export function Stats() {
+  const { t } = useTranslation()
+
+  const stats = [
+    {
+      label: t("stats.hackathon_label"),
+      value: "3rd Place",
+      icon: Trophy,
+      color: "text-[#ec4899]",
+      description: t("stats.hackathon_desc"),
+      link: "https://www.ps-events.in/genai-hackathon/"
+    },
+    {
+      label: t("stats.academic_label"),
+      value: "9.1 CGPA",
+      icon: GraduationCap,
+      color: "text-[#8b5cf6]",
+      description: t("stats.academic_desc")
+    },
+    {
+      label: t("stats.community_label"),
+      value: "300+ Signups",
+      icon: Users,
+      color: "text-[#22c55e]",
+      description: t("stats.community_desc"),
+      link: "https://www.meetup.com/aws-sbg-at-mysuru-royal-inst-of-tech/"
+    },
+    {
+      label: t("stats.open_source_label"),
+      value: "4+ Projects",
+      icon: Github,
+      color: "text-primary",
+      description: t("stats.open_source_desc")
+    }
+  ]
+
   return (
     <section id="stats" className="py-24 bg-muted/30">
       <div className="container px-6 mx-auto">

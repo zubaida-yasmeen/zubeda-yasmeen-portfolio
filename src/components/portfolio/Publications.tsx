@@ -1,9 +1,11 @@
+
 "use client"
 
 import { BookText, ExternalLink, ArrowRight, User } from "lucide-react"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import { useTranslation } from "./LanguageContext"
 
 const articles = [
   {
@@ -27,20 +29,22 @@ const articles = [
 ]
 
 export function Publications() {
+  const { t } = useTranslation()
+
   return (
     <section id="publications" className="py-24 bg-muted/20">
       <div className="container px-6 mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="space-y-4">
             <h2 className="text-sm font-code uppercase tracking-widest text-primary font-bold">
-              Knowledge Sharing
+              {t("publications.title")}
             </h2>
-            <h3 className="text-4xl font-bold tracking-tight">Articles & Publications</h3>
+            <h3 className="text-4xl font-bold tracking-tight">{t("publications.subtitle")}</h3>
           </div>
           <Button variant="outline" className="rounded-full border-primary/50 text-primary hover:bg-primary/10 group" asChild>
             <Link href="https://builder.aws.com/profile/@zubaidayasmeen" target="_blank">
               <User className="mr-2 h-4 w-4" />
-              View Builder Profile @zubaidayasmeen
+              {t("publications.profile_btn")}
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Link>
           </Button>
@@ -70,7 +74,7 @@ export function Publications() {
               <CardFooter className="pt-0">
                 <Button variant="link" className="p-0 h-auto text-primary font-bold group/btn" asChild>
                   <Link href={article.link} target="_blank">
-                    Read Article
+                    {t("publications.read_more")}
                     <ExternalLink className="ml-1.5 h-3.5 w-3.5 opacity-0 group-hover/btn:opacity-100 transition-opacity" />
                   </Link>
                 </Button>

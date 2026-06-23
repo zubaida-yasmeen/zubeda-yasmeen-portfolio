@@ -1,0 +1,63 @@
+
+{
+  "nav": {
+    "home": "Accueil",
+    "skills": "Compétences",
+    "stats": "Stats",
+    "projects": "Projets",
+    "articles": "Articles",
+    "certifications": "Certifs",
+    "experience": "Expérience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "hackathon": "AWS GenAI Hackathon — 3ème Place Lauréat National",
+    "intro": "Bonjour, je m'appelle",
+    "iam": "Je suis un",
+    "phrases": ["Ingénieur Cloud", "Bâtisseur d'IA", "Leader de Communauté", "Mentor Étudiant"],
+    "description": "Construction de systèmes natifs cloud, d'applications alimentées par l'IA et direction de communautés étudiantes via AWS.",
+    "view_projects": "Voir mes projets",
+    "download_resume": "Télécharger le CV"
+  },
+  "skills": {
+    "title": "Stack Technique",
+    "subtitle": "Compétences Clés",
+    "cloud": "Cloud",
+    "programming": "Programmation",
+    "tools": "Outils"
+  },
+  "stats": {
+    "hackathon_label": "AWS GenAI Hackathon",
+    "hackathon_desc": "Reconnaissance régionale pour l'évolutivité innovante de l'IA.",
+    "academic_label": "Excellence Académique",
+    "academic_desc": "Performance élevée constante dans le programme de base en CS.",
+    "community_label": "Croissance Communautaire",
+    "community_desc": "Développement local de l'AWS Student Builder Group.",
+    "open_source_label": "Open Source",
+    "open_source_desc": "Contributions actives aux écosystèmes natifs cloud."
+  },
+  "projects": {
+    "title": "Vitrine",
+    "subtitle": "Projets Phares"
+  },
+  "publications": {
+    "title": "Partage de Connaissances",
+    "subtitle": "Articles & Publications",
+    "profile_btn": "Voir le profil Builder @zubaidayasmeen",
+    "read_more": "Lire l'article"
+  },
+  "certifications": {
+    "title": "Validation",
+    "subtitle": "Certifications & Badges"
+  },
+  "experience": {
+    "title": "Parcours",
+    "subtitle": "Expérience Professionnelle"
+  },
+  "contact": {
+    "title": "Ouvert aux stages, rôles cloud, collaborations IA et opportunités de génie logiciel.",
+    "subtitle": "Ma boîte de réception est toujours ouverte, que vous ayez une question, une idée de projet ou simplement pour dire bonjour !",
+    "button": "Me Contacter",
+    "copyright": "Construit avec passion et infrastructure cloud."
+  }
+}

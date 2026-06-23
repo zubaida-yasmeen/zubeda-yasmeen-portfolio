@@ -1,10 +1,14 @@
+
 "use client"
 
 import Link from "next/link"
 import { Github, Linkedin, Mail, ChevronUp } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { useTranslation } from "./LanguageContext"
 
 export function Footer() {
+  const { t } = useTranslation()
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" })
   }
@@ -15,10 +19,10 @@ export function Footer() {
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <div className="space-y-4">
              <h2 className="text-3xl md:text-5xl font-bold tracking-tight">
-               Open to internships, cloud roles, AI collaborations, and software engineering opportunities.
+               {t("contact.title")}
              </h2>
              <p className="text-muted-foreground max-w-xl mx-auto">
-               My inbox is always open whether you have a question, a project idea, or just want to say hi!
+               {t("contact.subtitle")}
              </p>
           </div>
 
@@ -26,7 +30,7 @@ export function Footer() {
             <Button size="lg" className="rounded-full h-14 px-8 font-bold bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-300 shadow-lg shadow-primary/20" asChild>
               <Link href="mailto:zubeda@example.com">
                 <Mail className="mr-2 h-5 w-5" />
-                Get In Touch
+                {t("contact.button")}
               </Link>
             </Button>
             <div className="flex items-center gap-4">
@@ -54,7 +58,7 @@ export function Footer() {
                 <ChevronUp className="h-6 w-6" />
              </Button>
              <div className="text-center text-sm text-muted-foreground font-code">
-               <p>© {new Date().getFullYear()} Zubeda Yasmeen. Built with passion and cloud infrastructure.</p>
+               <p>© {new Date().getFullYear()} Zubeda Yasmeen. {t("contact.copyright")}</p>
              </div>
           </div>
         </div>

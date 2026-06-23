@@ -1,0 +1,63 @@
+
+{
+  "nav": {
+    "home": "홈",
+    "skills": "기술",
+    "stats": "통계",
+    "projects": "프로젝트",
+    "articles": "기사",
+    "certifications": "인증",
+    "experience": "경험",
+    "contact": "문의"
+  },
+  "hero": {
+    "hackathon": "AWS GenAI 해커톤 — 전국 3위 수상",
+    "intro": "안녕하세요, 제 이름은",
+    "iam": "저는",
+    "phrases": ["클라우드 엔지니어", "AI 빌더", "커뮤니티 리더", "학생 멘토"],
+    "description": "AWS를 통해 클라우드 네이티브 시스템 구축, AI 기반 애플리케이션 개발, 학생 커뮤니티 리딩을 하고 있습니다.",
+    "view_projects": "프로젝트 보기",
+    "download_resume": "이력서 다운로드"
+  },
+  "skills": {
+    "title": "기술 스택",
+    "subtitle": "핵심 역량",
+    "cloud": "클라우드",
+    "programming": "프로그래밍",
+    "tools": "도구"
+  },
+  "stats": {
+    "hackathon_label": "AWS GenAI 해커톤",
+    "hackathon_desc": "혁신적인 AI 확장에 대한 지역적 인정.",
+    "academic_label": "학업 우수",
+    "academic_desc": "CS 핵심 커리큘럼에서의 일관된 높은 성과.",
+    "community_label": "커뮤니티 성장",
+    "community_desc": "지역 AWS Student Builder Group 성장 주도.",
+    "open_source_label": "오픈 소스",
+    "open_source_desc": "클라우드 네이티브 생태계에 대한 적극적인 기여."
+  },
+  "projects": {
+    "title": "쇼케이스",
+    "subtitle": "주요 프로젝트"
+  },
+  "publications": {
+    "title": "지식 공유",
+    "subtitle": "기사 및 출판물",
+    "profile_btn": "빌더 프로필 보기 @zubaidayasmeen",
+    "read_more": "기사 읽기"
+  },
+  "certifications": {
+    "title": "검증",
+    "subtitle": "인증 및 배지"
+  },
+  "experience": {
+    "title": "여정",
+    "subtitle": "전문 경력"
+  },
+  "contact": {
+    "title": "인턴십, 클라우드 직무, AI 협업 및 소프트웨어 엔지니어링 기회에 열려 있습니다.",
+    "subtitle": "질문, 프로젝트 아이디어 또는 단순한 인사 등 언제든지 환영합니다!",
+    "button": "연락하기",
+    "copyright": "열정과 클라우드 인프라로 제작되었습니다."
+  }
+}

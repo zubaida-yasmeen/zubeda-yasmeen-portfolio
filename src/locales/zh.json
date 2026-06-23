@@ -1,0 +1,63 @@
+
+{
+  "nav": {
+    "home": "首页",
+    "skills": "技能",
+    "stats": "统计",
+    "projects": "项目",
+    "articles": "文章",
+    "certifications": "证书",
+    "experience": "经历",
+    "contact": "联系"
+  },
+  "hero": {
+    "hackathon": "AWS GenAI 黑客松 — 全国第三名",
+    "intro": "你好，我叫",
+    "iam": "我是一名",
+    "phrases": ["云计算工程师", "AI 开发者", "社区负责人", "学生导师"],
+    "description": "致力于构建云原生系统、AI 驱动的应用，并通过 AWS 领导学生社区。",
+    "view_projects": "查看我的项目",
+    "download_resume": "下载简历"
+  },
+  "skills": {
+    "title": "技术栈",
+    "subtitle": "核心竞争力",
+    "cloud": "云计算",
+    "programming": "编程语言",
+    "tools": "工具"
+  },
+  "stats": {
+    "hackathon_label": "AWS GenAI 黑客松",
+    "hackathon_desc": "创新 AI 扩展获得的区域认可。",
+    "academic_label": "学术卓越",
+    "academic_desc": "计算机科学核心课程保持优异成绩。",
+    "community_label": "社区成长",
+    "community_desc": "在当地发展 AWS Student Builder Group。",
+    "open_source_label": "开源贡献",
+    "open_source_desc": "积极参与云原生生态系统建设。"
+  },
+  "projects": {
+    "title": "作品展示",
+    "subtitle": "精选项目"
+  },
+  "publications": {
+    "title": "知识共享",
+    "subtitle": "文章与出版物",
+    "profile_btn": "查看 Builder 个人资料 @zubaidayasmeen",
+    "read_more": "阅读文章"
+  },
+  "certifications": {
+    "title": "专业认证",
+    "subtitle": "证书与徽章"
+  },
+  "experience": {
+    "title": "成长历程",
+    "subtitle": "职业经历"
+  },
+  "contact": {
+    "title": "寻求实习、云架构角色、AI 协作和软件工程机会。",
+    "subtitle": "无论是提问、项目构思，还是简单的问候，我的邮箱随时为您敞开！",
+    "button": "取得联系",
+    "copyright": "用激情和云基础设施构建。"
+  }
+}

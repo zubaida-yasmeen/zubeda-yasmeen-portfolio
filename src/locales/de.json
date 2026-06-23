@@ -1,0 +1,63 @@
+
+{
+  "nav": {
+    "home": "Start",
+    "skills": "Fähigkeiten",
+    "stats": "Statistiken",
+    "projects": "Projekte",
+    "articles": "Artikel",
+    "certifications": "Zertifikate",
+    "experience": "Erfahrung",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "hackathon": "AWS GenAI Hackathon — 3. Platz Nationaler Gewinner",
+    "intro": "Hallo, mein Name ist",
+    "iam": "Ich bin ein",
+    "phrases": ["Cloud-Ingenieur", "KI-Entwickler", "Community-Leiter", "Studenten-Mentor"],
+    "description": "Entwicklung von Cloud-nativen Systemen, KI-gestützten Anwendungen und Leitung von Studentengemeinschaften über AWS.",
+    "view_projects": "Projekte ansehen",
+    "download_resume": "Lebenslauf laden"
+  },
+  "skills": {
+    "title": "Technischer Stack",
+    "subtitle": "Kernkompetenzen",
+    "cloud": "Cloud",
+    "programming": "Programmierung",
+    "tools": "Werkzeuge"
+  },
+  "stats": {
+    "hackathon_label": "AWS GenAI Hackathon",
+    "hackathon_desc": "Regionale Anerkennung für innovative KI-Skalierung.",
+    "academic_label": "Akademische Exzellenz",
+    "academic_desc": "Konstant hohe Leistungen im Informatik-Kerncurriculum.",
+    "community_label": "Community-Wachstum",
+    "community_desc": "Lokaler Aufbau der AWS Student Builder Group.",
+    "open_source_label": "Open Source",
+    "open_source_desc": "Aktive Beiträge zu Cloud-nativen Ökosystemen."
+  },
+  "projects": {
+    "title": "Schaukasten",
+    "subtitle": "Ausgewählte Projekte"
+  },
+  "publications": {
+    "title": "Wissensaustausch",
+    "subtitle": "Artikel & Publikationen",
+    "profile_btn": "Builder-Profil ansehen @zubaidayasmeen",
+    "read_more": "Artikel lesen"
+  },
+  "certifications": {
+    "title": "Validierung",
+    "subtitle": "Zertifizierungen & Badges"
+  },
+  "experience": {
+    "title": "Reise",
+    "subtitle": "Berufserfahrung"
+  },
+  "contact": {
+    "title": "Offen für Praktika, Cloud-Rollen, KI-Kooperationen und Software-Engineering-Möglichkeiten.",
+    "subtitle": "Mein Posteingang ist immer offen, egal ob Sie eine Frage haben, eine Projektidee oder einfach nur Hallo sagen wollen!",
+    "button": "Kontakt aufnehmen",
+    "copyright": "Mit Leidenschaft und Cloud-Infrastruktur gebaut."
+  }
+}

@@ -1,0 +1,63 @@
+
+{
+  "nav": {
+    "home": "Início",
+    "skills": "Habilidades",
+    "stats": "Estatísticas",
+    "projects": "Projetos",
+    "articles": "Artigos",
+    "certifications": "Certificados",
+    "experience": "Experiência",
+    "contact": "Contato"
+  },
+  "hero": {
+    "hackathon": "AWS GenAI Hackathon — 3º Lugar Nacional",
+    "intro": "Olá, meu nome é",
+    "iam": "Eu sou",
+    "phrases": ["Engenheira de Nuvem", "Desenvolvedora de IA", "Líder Comunitária", "Mentora de Estudantes"],
+    "description": "Construindo sistemas nativos da nuvem, aplicações baseadas em IA e liderando comunidades estudantis através da AWS.",
+    "view_projects": "Ver Meus Projetos",
+    "download_resume": "Baixar Currículo"
+  },
+  "skills": {
+    "title": "Stack Tecnológico",
+    "subtitle": "Competências Principais",
+    "cloud": "Cloud",
+    "programming": "Programação",
+    "tools": "Ferramentas"
+  },
+  "stats": {
+    "hackathon_label": "AWS GenAI Hackathon",
+    "hackathon_desc": "Reconhecimento regional por escalonamento inovador de IA.",
+    "academic_label": "Excelência Acadêmica",
+    "academic_desc": "Alto desempenho consistente no currículo de CS.",
+    "community_label": "Crescimento Comunitário",
+    "community_desc": "Crescendo o AWS Student Builder Group localmente.",
+    "open_source_label": "Open Source",
+    "open_source_desc": "Contribuições ativas para ecossistemas nativos da nuvem."
+  },
+  "projects": {
+    "title": "Showcase",
+    "subtitle": "Projetos em Destaque"
+  },
+  "publications": {
+    "title": "Compartilhamento de Conhecimento",
+    "subtitle": "Artigos e Publicações",
+    "profile_btn": "Ver perfil Builder @zubaidayasmeen",
+    "read_more": "Ler Artigo"
+  },
+  "certifications": {
+    "title": "Validação",
+    "subtitle": "Certificações e Badges"
+  },
+  "experience": {
+    "title": "Jornada",
+    "subtitle": "Experiência Profissional"
+  },
+  "contact": {
+    "title": "Aberta a estágios, funções em nuvem, colaborações em IA e oportunidades de engenharia de software.",
+    "subtitle": "Minha caixa de entrada está sempre aberta, seja para uma dúvida, uma ideia de projeto ou apenas um olá!",
+    "button": "Entrar em Contato",
+    "copyright": "Construído com paixão e infraestrutura em nuvem."
+  }
+}

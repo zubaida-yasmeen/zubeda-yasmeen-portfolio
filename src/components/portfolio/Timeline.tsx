@@ -1,8 +1,10 @@
+
 "use client"
 
 import { ExternalLink, Github, Globe } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { useTranslation } from "./LanguageContext"
 
 const experiences = [
   {
@@ -52,14 +54,16 @@ const experiences = [
 ]
 
 export function Timeline() {
+  const { t } = useTranslation()
+
   return (
     <section id="experience" className="py-24 bg-muted/30">
       <div className="container px-6 mx-auto max-w-4xl">
         <div className="mb-16 text-center">
           <h2 className="text-sm font-code uppercase tracking-widest text-primary font-bold mb-4">
-            Journey
+            {t("experience.title")}
           </h2>
-          <h3 className="text-4xl font-bold tracking-tight">Professional Experience</h3>
+          <h3 className="text-4xl font-bold tracking-tight">{t("experience.subtitle")}</h3>
         </div>
 
         <div className="space-y-12 relative">
@@ -68,19 +72,16 @@ export function Timeline() {
               <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 h-full w-[2px] bg-border group-last:h-0" />
               
               <div className="flex flex-col md:flex-row items-start md:items-center">
-                {/* Desktop Content Alignment */}
                 <div className={`hidden md:block w-1/2 pr-12 text-right ${index % 2 !== 0 ? 'order-last pl-12 pr-0 text-left' : ''}`}>
                   <span className="text-xs font-code font-bold text-primary mb-2 block">{exp.period}</span>
                   <h4 className="text-xl font-bold">{exp.title}</h4>
                   <p className="text-sm text-accent font-medium mb-2">{exp.organization}</p>
                 </div>
 
-                {/* Dot */}
                 <div className="absolute left-0 md:left-1/2 md:-translate-x-1/2 w-4 h-4 rounded-full border-4 border-background z-10 transition-transform group-hover:scale-125" 
                   style={{ backgroundColor: `hsl(var(--primary))` }} 
                 />
 
-                {/* Content Box */}
                 <div className={`w-full md:w-1/2 ${index % 2 !== 0 ? 'md:pr-12 md:text-right' : 'md:pl-12'}`}>
                   <div className="bg-card p-6 rounded-xl border border-border shadow-sm group-hover:border-primary/30 transition-all duration-300">
                      <span className="md:hidden text-xs font-code font-bold text-primary mb-2 block">{exp.period}</span>

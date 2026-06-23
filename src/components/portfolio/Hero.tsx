@@ -1,11 +1,15 @@
+
 "use client"
 
 import { TypingEffect } from "./TypingEffect"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Github, Linkedin, FileText, Trophy } from "lucide-react"
 import Link from "next/link"
+import { useTranslation } from "./LanguageContext"
 
 export function Hero() {
+  const { t } = useTranslation()
+
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
       {/* Background Orbs */}
@@ -19,39 +23,39 @@ export function Hero() {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary mb-2 animate-bounce-slow">
               <Trophy className="h-4 w-4" />
               <span className="text-xs font-bold tracking-tight uppercase font-code">
-                AWS GenAI Hackathon — 3rd Place National Winner
+                {t("hero.hackathon")}
               </span>
             </div>
 
             <p className="text-sm font-code uppercase tracking-widest text-accent font-bold pt-4">
-              Hi, my name is
+              {t("hero.intro")}
             </p>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight">
               Zubeda Yasmeen
             </h1>
             <h2 className="text-xl md:text-3xl font-medium text-muted-foreground min-h-[1.5em] flex items-center justify-center gap-2">
-              <span>I am a</span>
+              <span>{t("hero.iam")}</span>
               <TypingEffect 
-                phrases={["Cloud Engineer", "AI Builder", "Community Leader", "Student Mentor"]} 
+                phrases={t("hero.phrases")} 
               />
             </h2>
           </div>
 
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-            Building cloud-native systems, AI-powered applications, and leading student communities through AWS.
+            {t("hero.description")}
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
             <Button size="lg" className="h-12 px-8 rounded-full font-bold group bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/20" asChild>
               <Link href="#projects">
-                View My Projects
+                {t("hero.view_projects")}
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
             </Button>
             <Button variant="outline" size="lg" className="h-12 px-8 rounded-full font-bold border-border hover:border-primary/50 hover:text-primary transition-all" asChild>
               <Link href="#" target="_blank">
                 <FileText className="mr-2 h-4 w-4" />
-                Download Resume
+                {t("hero.download_resume")}
               </Link>
             </Button>
             <div className="flex items-center gap-3">

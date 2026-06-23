@@ -1,0 +1,63 @@
+
+{
+  "nav": {
+    "home": "ホーム",
+    "skills": "スキル",
+    "stats": "統計",
+    "projects": "プロジェクト",
+    "articles": "記事",
+    "certifications": "認定",
+    "experience": "経験",
+    "contact": "連絡"
+  },
+  "hero": {
+    "hackathon": "AWS GenAI ハッカソン — 全国第3位入賞",
+    "intro": "こんにちは、私の名前は",
+    "iam": "私は",
+    "phrases": ["クラウドエンジニア", "AIビルダー", "コミュニティリーダー", "学生メンター"],
+    "description": "クラウドネイティブシステムの構築、AI搭載アプリケーションの開発、そしてAWSを通じた学生コミュニティの指導を行っています。",
+    "view_projects": "プロジェクトを見る",
+    "download_resume": "履歴書をダウンロード"
+  },
+  "skills": {
+    "title": "技術スタック",
+    "subtitle": "コア・コンピテンシー",
+    "cloud": "クラウド",
+    "programming": "プログラミング",
+    "tools": "ツール"
+  },
+  "stats": {
+    "hackathon_label": "AWS GenAI ハッカソン",
+    "hackathon_desc": "革新的なAIスケーリングに対する地域的な評価。",
+    "academic_label": "学業優秀",
+    "academic_desc": "CSコアカリキュラムにおける一貫した高いパフォーマンス。",
+    "community_label": "コミュニティの成長",
+    "community_desc": "地元でAWS Student Builder Groupを育成。",
+    "open_source_label": "オープンソース",
+    "open_source_desc": "クラウドネイティブエコシステムへの積極的な貢献。"
+  },
+  "projects": {
+    "title": "ショーケース",
+    "subtitle": "注目のプロジェクト"
+  },
+  "publications": {
+    "title": "ナレッジ共有",
+    "subtitle": "記事と出版物",
+    "profile_btn": "ビルダープロファイルを見る @zubaidayasmeen",
+    "read_more": "記事を読む"
+  },
+  "certifications": {
+    "title": "検証",
+    "subtitle": "認定とバッジ"
+  },
+  "experience": {
+    "title": "ジャーニー",
+    "subtitle": "プロフェッショナルな経験"
+  },
+  "contact": {
+    "title": "インターンシップ、クラウド関連の職務、AIコラボレーション、ソフトウェアエンジニアリングの機会を歓迎します。",
+    "subtitle": "質問やプロジェクトのアイデア、あるいは単なる挨拶でも、私の受信トレイはいつでも開いています！",
+    "button": "連絡する",
+    "copyright": "情熱とクラウドインフラで構築されました。"
+  }
+}
