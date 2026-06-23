@@ -7,6 +7,7 @@ import { Moon, Sun, Menu, X, Globe } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 import { useTranslation } from "./LanguageContext"
+import { ContactDialog } from "./ContactDialog"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -108,9 +109,13 @@ export function Navbar() {
             <Button variant="ghost" size="icon" onClick={toggleTheme}>
               {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
             </Button>
-            <Button variant="default" size="sm" className="hidden lg:flex" asChild>
-              <Link href="#contact">{t("nav.contact")}</Link>
-            </Button>
+            <ContactDialog 
+              trigger={
+                <Button variant="default" size="sm" className="hidden lg:flex">
+                  {t("nav.contact")}
+                </Button>
+              }
+            />
           </div>
         </div>
 
@@ -142,9 +147,13 @@ export function Navbar() {
               {link.name}
             </Link>
           ))}
-          <Button className="w-full mt-4" asChild onClick={() => setIsMobileMenuOpen(false)}>
-            <Link href="#contact">{t("nav.contact")}</Link>
-          </Button>
+          <ContactDialog 
+            trigger={
+              <Button className="w-full mt-4" onClick={() => setIsMobileMenuOpen(false)}>
+                {t("nav.contact")}
+              </Button>
+            }
+          />
         </div>
       )}
     </nav>

@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Github, Linkedin, Mail, ChevronUp } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useTranslation } from "./LanguageContext"
+import { ContactDialog } from "./ContactDialog"
 
 export function Footer() {
   const { t } = useTranslation()
@@ -27,12 +28,14 @@ export function Footer() {
           </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-4">
-            <Button size="lg" className="rounded-full h-14 px-8 font-bold bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-300 shadow-lg shadow-primary/20" asChild>
-              <Link href="mailto:zubedayasmeen1610@gmail.com">
-                <Mail className="mr-2 h-5 w-5" />
-                {t("contact.button")}
-              </Link>
-            </Button>
+            <ContactDialog 
+              trigger={
+                <Button size="lg" className="rounded-full h-14 px-8 font-bold bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-300 shadow-lg shadow-primary/20">
+                  <Mail className="mr-2 h-5 w-5" />
+                  {t("contact.button")}
+                </Button>
+              }
+            />
             <div className="flex items-center gap-4">
               <Link 
                 href="https://github.com/zubaida-yasmeen/" 

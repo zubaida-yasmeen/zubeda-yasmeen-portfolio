@@ -59,5 +59,16 @@
     "subtitle": "My inbox is always open whether you have a question, a project idea, or just want to say hi!",
     "button": "Get In Touch",
     "copyright": "Built with passion and cloud infrastructure."
+  },
+  "contact_form": {
+    "title": "Send a Message",
+    "subtitle": "Fill out the form below to get in touch.",
+    "name": "Full Name",
+    "email": "Email Address",
+    "message": "Message",
+    "placeholder_name": "John Doe",
+    "placeholder_email": "john@example.com",
+    "placeholder_message": "Tell me about your project or opportunity...",
+    "submit": "Send Message"
   }
 }
