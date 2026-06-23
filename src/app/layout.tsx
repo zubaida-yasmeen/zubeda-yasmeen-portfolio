@@ -1,11 +1,10 @@
-
 import type {Metadata} from 'next';
 import './globals.css';
 import { LanguageProvider } from '@/components/portfolio/LanguageContext';
 
 export const metadata: Metadata = {
-  title: 'Zubeda Yasmeen | Cloud Engineer & AI Builder',
-  description: 'Portfolio of Zubeda Yasmeen - Cloud Engineer, AI Builder, and Community Leader.',
+  title: 'Zubeda Yasmeen | Cloud Engineer | AWS Community Lead | AI Builder',
+  description: 'Portfolio of Zubeda Yasmeen — AWS community leader, cloud builder, AI enthusiast, and software engineering student.',
 };
 
 export default function RootLayout({
