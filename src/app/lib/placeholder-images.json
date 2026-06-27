@@ -1,34 +1,33 @@
-
 {
   "placeholderImages": [
     {
       "id": "project-cloud",
       "description": "AWS Cloud Club MRIT Website Hero",
-      "imageUrl": "https://picsum.photos/seed/aws-mrit-hero/800/450",
+      "imageUrl": "/images/projects/aws-club.png",
       "imageHint": "cloud website"
     },
     {
       "id": "project-cybernode",
       "description": "CyberNode ML-Adaptive Honeypot Dashboard",
-      "imageUrl": "https://picsum.photos/seed/cybernode/800/450",
+      "imageUrl": "/images/projects/cybernode.png",
       "imageHint": "security dashboard"
     },
     {
       "id": "project-ai",
       "description": "Artificial Intelligence visualization",
-      "imageUrl": "https://picsum.photos/seed/ai456/800/600",
+      "imageUrl": "/images/projects/ai-project.png",
       "imageHint": "artificial intelligence"
     },
     {
       "id": "project-devops",
       "description": "CI/CD Pipeline visualization",
-      "imageUrl": "https://picsum.photos/seed/devops789/800/600",
+      "imageUrl": "/images/projects/devops.png",
       "imageHint": "software development"
     },
     {
       "id": "profile-hero",
-      "description": "Developer portrait placeholder",
-      "imageUrl": "https://picsum.photos/seed/zubeda/400/400",
+      "description": "Developer portrait",
+      "imageUrl": "/images/profile/profile.jpeg",
       "imageHint": "professional portrait"
     }
   ]
