@@ -59,12 +59,24 @@ export function Hero() {
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Link>
               </Button>
-              <Button variant="outline" size="lg" className="h-12 px-8 rounded-full font-bold border-border hover:border-primary/50 hover:text-primary transition-all" asChild>
-                <Link href="#" target="_blank">
-                  <FileText className="mr-2 h-4 w-4" />
-                  {t("hero.download_resume")}
-                </Link>
-              </Button>
+
+              <Button
+  variant="outline"
+  size="lg"
+  className="h-12 px-8 rounded-full font-bold border-border hover:border-primary/50 hover:text-primary transition-all"
+  asChild
+>
+  <Link
+    href="/resume/Zubeda_Yasmeen_Resume.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FileText className="mr-2 h-4 w-4" />
+    {t("hero.download_resume")}
+  </Link>
+</Button>
+
+
               <div className="flex items-center gap-3">
                 <Button variant="outline" size="icon" className="h-12 w-12 rounded-full border-border hover:border-primary/50 hover:text-primary transition-all shadow-sm" asChild>
                   <Link href="https://github.com/zubaida-yasmeen/" target="_blank" rel="noopener noreferrer">
